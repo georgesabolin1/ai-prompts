@@ -1,12 +1,13 @@
 {
-  "name": "ai-prompts",
+  "name": "ai-prompts-support",
   "version": "1.0.0",
   "description": "Prompt evaluation suite for Linagora AI",
   "main": "promptfooconfig.js",
   "scripts": {
-    "eval": "npm run eval:scribe && npm run eval:email",
+    "eval": "npm run eval:scribe && npm run eval:email && run eval:support",
     "eval:email": "promptfoo eval -c promptfooconfig.email.js",
     "eval:scribe": "promptfoo eval -c promptfooconfig.scribe.js",
+    "eval:support": "promptfoo eval -c promptfooconfig.support.js",
     "view": "promptfoo view",
     "eval-ci": "PROMPTFOO_REQUEST_BACKOFF_MS=5000 promptfoo eval -o results.json -o report.html --verbose && node scripts/eval-summary.js",
     "export": "node scripts/export-prompts.js",
@@ -16,6 +17,6 @@
   "devDependencies": {
     "better-sqlite3": "^11.8.1",
     "dotenv": "^17.2.3",
-    "promptfoo": "0.120.17"
+    "promptfoo": "^0.121.3"
   }
 }
