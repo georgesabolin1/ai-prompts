@@ -1,4 +1,4 @@
-const TEST_LIMIT = 10;
+const TEST_LIMIT = 2;
 
 const { buildMessages } = require('../../utils/prompts');
 const { SUPPORT_SYSTEM_INSTRUCTIONS } = require('../system_prompts');
