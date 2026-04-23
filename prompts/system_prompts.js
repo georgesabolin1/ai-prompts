@@ -29,7 +29,7 @@ Return **NO** if the email:
 
 **When in doubt, return NO.**
 
-## TASK 3: Label Assignment
+## TASK 2: Label Assignment
 From the provided labels, select **all labels** that are relevant to the email content.
 
 Label selection criteria:
