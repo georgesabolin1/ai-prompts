@@ -24,7 +24,57 @@ const supportTestCases = [
       username: 'unknown',
       email: 'unknown',
       user_status: 'unknown',
-      message: `J'ai eu plusieurs fois des fermetures de l'application, sans pour autant comprendre pourquoi. La gestion du thème sombre est perfectible, notamment dans la création d'une nouvelle entrée, les boutons "enregistrer" sont écrits en noir sur fond gris foncé, donc quasiment illisibles. Mais je ne peux pas t'illustrer avec une capture d'écran, elles ne sont pas possible. Le raccourci "My vault" dans les réglages rapides ne fonctionne plus. Je l'aimais bien celui-là, il était pratique pour accéder à l'appli rapidement. Et l'appui sur ce raccourci provoque une fermeture d'application.`
+      message: `Sur Android, dans l’application mobile, et ça arrive à chaque fois.
+      ###ACUAL OPENED TICKET
+{
+  "global_mode": "structured_support",
+  "satisfaction": "neutral",
+  "time_sensitive": "no",
+  "conversational_response": { "text": "" },
+  "scope_boundary_response": { "text": "" },
+  "topics": [
+    {
+      "topic_label": "Settings : sign out",
+      "topic_category": "bug",
+      "topic_objective": "create",
+      "matched_historical_topic": "no",
+      "topic_status": "active",
+      "display_order": 1,
+      "topic_history": "User: reports sign out closes app\nBot: asks environment_context",
+      "context_anchor": "Paramètres > Compte > Déconnexion",
+      "context_anchor_complete": "yes",
+      "user_goal": "sign out",
+      "user_goal_complete": "yes",
+      "gap_observed": "",
+      "gap_observed_complete": "n/a",
+      "failure_step": "click Sign out > app closes",
+      "failure_step_complete": "yes",
+      "environment_context": "",
+      "environment_context_status": "missing",
+      "bug_scope": "",
+      "bug_scope_status": "missing",
+      "blocking_issue": "no",
+      "enough_information": "no",
+      "solution_type_available": "no",
+      "main_response_type": "ask_info",
+      "next_step": "wait_for_user"
+    }
+  ],
+  "structured_support_response": {
+    "routing_clarification_text": "",
+    "politeness_opening": "Merci pour votre message.",
+    "topic_count_sentence": "",
+    "topics": [
+      {
+        "display_order": 1,
+        "reformulation": "L’application se ferme lorsque vous cliquez sur Déconnexion.",
+        "response_text": "Pour avancer, pouvez-vous préciser sur quel appareil ou environnement cela se produit ?",
+        "next_step_phrase": "Pour avancer, nous attendons votre réponse."
+      }
+    ],
+    "politeness_closure": "Merci."
+  }
+} `
     },
     expectedOutput: {
       global_mode: 'structured_support',
