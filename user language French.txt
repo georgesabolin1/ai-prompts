@@ -1,0 +1,65 @@
+{
+  "user_language": "French / English / Other / Unknown",
+  "warning_comprehension": "yes / no",
+  "segments": [
+    {
+      "segment_type": "topic",
+      "matched_historical_topic": "yes / no",
+      "id_topic": 1,
+      "topic_category": "billing / access_security / bug / request / question_faq / other",
+      "tool_or_product": "Twake / Twake Workplace / Twake Drive / Twake Pass / Twake Sync / Cozy / Cozy Banks / Google Wallet / ...",
+      "topic_action": "create / rename / log in / reset password / sync / pay / share / install / improve / restore / use / ...",
+      "topic_object": "folder / file / account / password / subscription / connector / bank sync / photos / document / ...",
+      "topic_label": "tool_or_product : topic_action : topic_object",
+      "topic_details": {
+        "feature_or_page": "folder creation / login page / dark mode / quick settings / Photos tab / bank connectors / ...",
+        "provided_url": "samo.mycozy.cloud / https://... / domain or path explicitly given",
+        "pre_problem_state": "was logged in this morning / after switching to Twake / worked with Cozy / account works on Mac / ...",
+        "observed_result": "nothing happens / app closes / cannot enter folder name / payment refused / account not recognized / ...",
+        "expected_result": "folder should be created / document should be shared / user should be able to log in / ...",
+        "error_message": "exact error message displayed to the user, verbatim if quoted",
+        "platform": "mobile app / web / desktop app / website / browser",
+        "account_context": "premium account / free account / phone-only signup / existing Cozy account / ...",
+        "frequency": "always / sometimes / several times / since 1 week / more than 9 months / for several months / ...",
+        "affected_scope": "one folder / all bank connectors / ENSAP, Netflix, Nespresso / Google Wallet payments / ...",
+        "screenshot_available": "yes / no / not possible",
+        "additional_context": "any explicit useful context that fits no other field",
+        "trigger_action": "click Save / tap My vault shortcut / click share then Twake / scroll down / create folder / ...",
+        "access_action": "log in / reset password / accept invitation / enable MFA / recover account / ...",
+        "auth_method": "password / phone number / email / username / MFA / organization server / ...",
+        "os": "Android / Android 15 / iOS / iOS 26.1 bêta / Windows 11 / macOS / /e/os / iPadOS / ...",
+        "device": "Fairphone 4 / iPhone 14 / iPad / Mac / specific model only",
+        "browser": "Chrome / Safari / Firefox / Edge / two different browsers / ...",
+        "app_version": "v5.2.1 / 3.4.0 / specific version only",
+        "server_or_instance": "samo.mycozy.cloud / production / staging / organization server / ...",
+        "affected_users": "only me / multiple users / my wife and I / explicit users only",
+        "video_available": "yes / no / not possible",
+        "logs_available": "yes / no",
+        "billing_issue_type": "double charge / payment refused / refund request / plan change request / subscription suspension question / unexpected charge / ...",
+        "billing_provider": "Google / Google Play / Google Wallet / bank card / CozyCloud / Easypark SARL Metz / ...",
+        "offer_or_plan": "premium / free version / discovery plan / 3€/month / current offer / ...",
+        "amount": "2.99 / 2,99 / 3 / 9.99 / ...",
+        "currency": "€ / EUR / USD / ...",
+        "billing_date_or_period": "twice a month / this month / since November 2025 / since the switch to Twake / ...",
+        "gap_observed": "missing folders for passwords / no photo management / no calendar sharing / no connector for Octopus Energie / ...",
+        "question_intent": "how_to / is_it_possible / future_availability"
+      },
+      "tested_action": "reinstall the app / update the app / retry after app update / use iOS storage as workaround / reset password / previous suggested action / ...",
+      "outcome_tested_action": "worked / failed / partially_worked / not_tried / unclear",
+      "user_goal": "Short English internal support summary, max about 200 characters.",
+      "blocking_issue": "yes / no"
+    },
+    {
+      "segment_type": "signal",
+      "signal_verbatim": "exact substring from latest_user_message",
+      "signal_types": [
+        "thanks_neutral / thanks_positive / positive_feedback / negative_feedback / disappointment / churn_intent / waiting / apology / closure / time_sensitive / impolite / complaint_without_actionable_detail / communication_feedback / pricing_feedback / feature_loss_feedback / confirmation_without_new_field"
+      ]
+    },
+    {
+      "segment_type": "scope_boundary",
+      "signal_verbatim": "exact substring from latest_user_message",
+      "scope_boundary_type": "generic_out_of_scope / non_support_linagora / unrelated_request / spam_or_commercial"
+    }
+  ]
+}
